@@ -29,7 +29,8 @@
     }
   }
   .right {
-    padding: 14px 40px 0 0;
+    // margin: 14px 0 319px;
+    margin-bottom: 319px;
     width: 67%;
     &__btn {
       float: right;
@@ -38,24 +39,75 @@
       box-sizing: border-box;
       border-radius: 40px;
       background-color: #fff;
+      margin: 12px 40px 0 0;
     }
     &__text {
-      margin: 120px auto 0;
+      padding-left: 136px;
+      margin: 120px 0 120px;
       max-width: 540px;
     }
-    &__title {
-      font-family: 'FavoritPro-Book';
-      font-size: 40px;
-      line-height: 44px;
-      letter-spacing: -0.02em;
-      font-feature-settings: 'salt' on;
-      margin-bottom: 40px;
-    }
+    // переписал то что снизу так как кейс не получалось ровнять тогда
+    // &__text {
+    //   margin: 120px auto 120px;
+    //   max-width: 540px;
+    // }
+    // &__title {
+    //   font-family: 'FavoritPro-Book';
+    //   font-size: 40px;
+    //   line-height: 44px;
+    //   letter-spacing: -0.02em;
+    //   font-feature-settings: 'salt' on;
+    //   margin-bottom: 40px;
+    // }
     &__paragr {
       margin-top: 24px;
       font-size: 18px;
       line-height: 24px;
       font-feature-settings: 'salt' on;
+			width: 540px;
+    }
+    &__subtitle {
+      margin-top: 40px;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      font-feature-settings: 'salt' on;
+    }
+    .keys {
+      background-color: @bg-color;
+      padding: 120px 0;
+      &__title {
+        padding-left: 136px;
+      }
+      &__examples {
+        margin: 0 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 347px);
+        grid-template-rows: minmax(347px, auto);
+        grid-auto-rows: minmax(347px, auto);
+        // grid-template-columns: repeat(2, minmax(347px, auto));
+        gap: 40px;
+        // justify-content: start;
+      }
+      // &__block {
+      // 	margin: 0 40px;
+      // }
+      &__img {
+        width: 347px;
+        height: 347px;
+        background-color: @keys-color;
+        // display: block;
+      }
+      &__link {
+        display: block;
+        margin-top: 24px;
+        font-family: 'FavoritPro-Book';
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        font-feature-settings: 'salt' on;
+        color: #000000;
+      }
     }
   }
 }
