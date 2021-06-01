@@ -5,11 +5,9 @@
     display: flex;
     flex-direction: row;
   }
-
 }
 .left {
 	padding: 14px 0 0 40px;
-	// width: calc(1 / 3);
 	width: 33%;
 	background-color: @main-color;
 	&__links {
@@ -19,25 +17,22 @@
 		display: block;
 		margin-top: 32px;
 		color: #000;
-		font-family: 'FavoritPro-Book';
+		font-family: 'FavoritPro-Medium';
 		font-size: 14px;
 		line-height: 20px;
 		letter-spacing: -0.02em;
 		font-feature-settings: 'salt' on;
 		max-width: 216px;
 		&:first-child {
-			font-family: 'Wremena-Bold';
+			font-family: 'FavoritPro-Medium';
 		}
 	}
-	// main > a {
-	//   font-family: 'Wremena-Bold';
-	// }
 }
 .right {
-	// margin: 14px 0 319px;
 	margin-bottom: 199px;
 	width: 67%;
 	&__btn {
+		font-family: 'FavoritPro-Medium';
 		float: right;
 		padding: 11px 23px;
 		border: 1px solid @main-color;
@@ -51,19 +46,6 @@
 		margin: 120px 0 120px;
 		max-width: 540px;
 	}
-	// переписал то что снизу так как кейс не получалось ровнять тогда
-	// &__text {
-	//   margin: 120px auto 120px;
-	//   max-width: 540px;
-	// }
-	// &__title {
-	//   font-family: 'FavoritPro-Book';
-	//   font-size: 40px;
-	//   line-height: 44px;
-	//   letter-spacing: -0.02em;
-	//   font-feature-settings: 'salt' on;
-	//   margin-bottom: 40px;
-	// }
 	&__paragr {
 		margin-top: 24px;
 		font-size: 18px;
@@ -75,13 +57,13 @@
 		}
 	}
 	&__subtitle {
+		font-family: 'FavoritPro-Medium';
 		margin-top: 40px;
 		font-size: 24px;
 		line-height: 28px;
 		letter-spacing: -0.02em;
 		font-feature-settings: 'salt' on;
 	}
-
 }
 .keys {
 	background-color: @bg-color;
@@ -89,9 +71,6 @@
 	.right__text {
 		margin: 0 0 40px;
 	}
-	// &__title {
-	//   // padding-left: 136px;
-	// }
 	&__subtitle {
 		padding-left: 136px;
 		margin-bottom: 42px;
@@ -107,18 +86,12 @@
 		grid-template-columns: repeat(2, 347px);
 		grid-template-rows: minmax(347px, auto);
 		grid-auto-rows: minmax(347px, auto);
-		// grid-template-columns: repeat(2, minmax(347px, auto));
 		gap: 40px;
-		// justify-content: start;
 	}
-	// &__block {
-	// 	margin: 0 40px;
-	// }
 	&__img {
 		width: 347px;
 		height: 347px;
 		background-color: @keys-color;
-		// display: block;
 	}
 	&__link {
 		display: block;

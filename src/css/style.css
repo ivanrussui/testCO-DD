@@ -166,6 +166,7 @@ h6 {
           align-items: center;
 }
 .header__text {
+  font-family: 'FavoritPro-Medium';
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.02em;
@@ -230,7 +231,7 @@ h6 {
   display: block;
   margin-top: 32px;
   color: #000;
-  font-family: 'FavoritPro-Book';
+  font-family: 'FavoritPro-Medium';
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -239,13 +240,14 @@ h6 {
   max-width: 216px;
 }
 .left__link:first-child {
-  font-family: 'Wremena-Bold';
+  font-family: 'FavoritPro-Medium';
 }
 .right {
   margin-bottom: 199px;
   width: 67%;
 }
 .right__btn {
+  font-family: 'FavoritPro-Medium';
   float: right;
   padding: 11px 23px;
   border: 1px solid #44FBA3;
@@ -272,6 +274,7 @@ h6 {
   color: #0047ff;
 }
 .right__subtitle {
+  font-family: 'FavoritPro-Medium';
   margin-top: 40px;
   font-size: 24px;
   line-height: 28px;
@@ -357,12 +360,21 @@ h6 {
   }
 }
 @media (max-width: 768px) {
+  .menu {
+    min-height: 553px;
+  }
   .menu__story {
     font-size: 36px;
     line-height: 40px;
   }
   .line {
     min-height: 120px;
+  }
+  .line__number {
+    font-size: 60px;
+  }
+  .line__descr {
+    font-size: 24px;
   }
   .title {
     font-size: 36px;
