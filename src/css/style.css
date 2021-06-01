@@ -357,9 +357,6 @@ h6 {
   }
 }
 @media (max-width: 768px) {
-  .menu {
-    min-height: 553px;
-  }
   .menu__story {
     font-size: 36px;
     line-height: 40px;
@@ -414,8 +411,7 @@ h6 {
     border-color: #fff;
   }
   .menu__story {
-    margin: 125px 10px 24px;
-    font-size: 32px;
+    margin: 125px 20px 24px;
   }
   .left {
     position: relative;
@@ -449,5 +445,18 @@ h6 {
     margin: 40px auto 0;
     width: 335px;
     height: 335px;
+  }
+}
+@media (max-width: 374px) {
+  .keys__img {
+    width: 280px;
+    height: 280px;
+  }
+  .right__paragr {
+    min-width: 280px;
+    max-width: 280px;
+  }
+  .title {
+    font-size: 32px;
   }
 }
