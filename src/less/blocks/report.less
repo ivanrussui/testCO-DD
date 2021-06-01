@@ -69,7 +69,7 @@
       font-size: 18px;
       line-height: 24px;
       font-feature-settings: 'salt' on;
-      width: 540px;
+      min-width: 540px;
       span {
         color: #0047ff;
       }
@@ -84,9 +84,12 @@
     .keys {
       background-color: @bg-color;
       padding: 120px 0;
-      &__title {
-        padding-left: 136px;
-      }
+			.right__text {
+				margin: 0 0 40px;
+			}
+      // &__title {
+      //   // padding-left: 136px;
+      // }
       &__subtitle {
         padding-left: 136px;
         margin-bottom: 42px;

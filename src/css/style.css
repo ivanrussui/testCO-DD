@@ -266,7 +266,7 @@ h6 {
   line-height: 24px;
   -webkit-font-feature-settings: 'salt' on;
           font-feature-settings: 'salt' on;
-  width: 540px;
+  min-width: 540px;
 }
 .report .right__paragr span {
   color: #0047ff;
@@ -283,8 +283,8 @@ h6 {
   background-color: #F9E8F2;
   padding: 120px 0;
 }
-.report .right .keys__title {
-  padding-left: 136px;
+.report .right .keys .right__text {
+  margin: 0 0 40px;
 }
 .report .right .keys__subtitle {
   padding-left: 136px;
@@ -328,4 +328,40 @@ h6 {
   -webkit-font-feature-settings: 'salt' on;
           font-feature-settings: 'salt' on;
   margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .report .right .keys__examples {
+    grid-template-columns: repeat(auto-fit, 347px);
+  }
+  .report .right .keys__text {
+    padding-left: 0;
+    margin: 120px auto;
+  }
+}
+@media (max-width: 992px) {
+  .report .left {
+    padding: 14px 10px 0;
+  }
+  .report .right__text {
+    padding: 0 10px 0;
+  }
+  .report .right__paragr {
+    min-width: 300px;
+    max-width: 540px;
+  }
+  .report .right .keys__subtitle {
+    padding: 0 10px;
+  }
+  .report .right .keys__examples {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .menu__story {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .line {
+    min-height: 120px;
+  }
 }
