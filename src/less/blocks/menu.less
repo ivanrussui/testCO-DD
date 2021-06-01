@@ -4,20 +4,6 @@
   background: url('../img/bg.jpg') no-repeat center center / cover;
   min-height: 100vh;
   position: relative;
-  .header {
-    padding: 5px 59px 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__text {
-      // font-family: 'FavoritPro-Medium';
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: -0.02em;
-      font-feature-settings: 'salt' on;
-      color: #ffffff;
-    }
-  }
   &__story {
     font-family: 'FavoritPro-Book';
     font-size: 64px;
@@ -36,33 +22,48 @@
       margin: 0 auto;
     }
   }
-  .line {
-    background-color: @main-color;
-    min-height: 200px;
-    display: flex;
-		white-space: nowrap;
-    &__item {
-      padding: 0 40px;
-      display: flex;
-      align-items: center;
-			padding-left: 100%;
-			animation: scroll 15s infinite linear;
-    }
-    &__number {
-      padding: 0 20px 0 40px;
-      font-size: 80px;
-      line-height: 80px;
-      letter-spacing: -0.02em;
-      text-transform: uppercase;
-      font-feature-settings: 'pnum' on, 'lnum' on, 'salt' on;
-    }
-    &__descr {
-      font-size: 27px;
-      line-height: 28px;
-      letter-spacing: -0.02em;
-      font-feature-settings: 'salt' on;
-    }
-  }
+}
+.header {
+	padding: 5px 59px 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__text {
+		// font-family: 'FavoritPro-Medium';
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: -0.02em;
+		font-feature-settings: 'salt' on;
+		color: #ffffff;
+	}
+}
+
+.line {
+	background-color: @main-color;
+	min-height: 200px;
+	display: flex;
+	white-space: nowrap;
+	&__item {
+		padding: 0 40px;
+		display: flex;
+		align-items: center;
+		padding-left: 100%;
+		animation: scroll 15s infinite linear;
+	}
+	&__number {
+		padding: 0 20px 0 40px;
+		font-size: 80px;
+		line-height: 80px;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		font-feature-settings: 'pnum' on, 'lnum' on, 'salt' on;
+	}
+	&__descr {
+		font-size: 27px;
+		line-height: 28px;
+		letter-spacing: -0.02em;
+		font-feature-settings: 'salt' on;
+	}
 }
 
 
